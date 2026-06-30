@@ -1,12 +1,13 @@
 import { BaggageClaim, UserRound, Search, Menu } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 export default function MainNav() {
     return (
-        <div className='flex justify-between items-center bg-black px-6 py-3'>
+        <div className='flex justify-between items-center bg-cyan-950 px-20 py-3'>
             <div className='flex justify-center items-center gap-2'>
                 <Menu className='text-white' />
-                <h1 className='text-white font-bold text-xl'>Akij</h1>
+                <h1 className='text-white font-bold text-7xl'>Akij</h1>
             </div>
 
             <div className="relative flex items-center w-full max-w-xl mx-8 bg-white rounded-md overflow-hidden">
@@ -24,8 +25,8 @@ export default function MainNav() {
             </div>
 
             <div className='flex gap-4 items-center text-white'>
-                <h1 className='text-sm cursor-pointer'>Best Sellers</h1>
-                <h1 className='text-sm cursor-pointer'>New Arrivals</h1>
+                <Link href="/products?sort=best-sellers" className='text-sm cursor-pointer'>Best Sellers</Link>
+                <Link href="/products?sort=new-arrivals" className='text-sm cursor-pointer'>New Arrivals</Link>
                 <UserRound />
                 <BaggageClaim />
             </div>
