@@ -42,7 +42,7 @@ function CategorySection({ category }) {
 
         {/* Left — large featured image */}
         <div className="w-72 shrink-0 flex flex-col">
-          <div className="relative flex-1 min-h-[400px] rounded-xl overflow-hidden bg-gray-100">
+          <div className="relative flex-1 hover:scale-105 transition-transform duration-500 min-h-100 rounded-t-xl overflow-hidden bg-gray-100">
             <Image
               src={category.featuredImage}
               alt={category.name}

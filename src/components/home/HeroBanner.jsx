@@ -13,18 +13,20 @@ export default function HeroBanner() {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
-        console.log("Interval started");
-        const timer = setInterval(() => {
-            setCurrent((prev) => {
-                console.log("Changing to slide", prev + 1);
-                return (prev + 1) % slides.length;
-            });
-        }, 4000);
-        return () => {
-            console.log("Interval cleared");
-            clearInterval(timer);
-        };
-    }, []);
+    let mounted = true;
+
+    const timer = setInterval(() => {
+        if (mounted) {
+            setCurrent((prev) => (prev + 1) % slides.length);
+        }
+    }, 4000);
+
+    return () => {
+        mounted = false;
+        clearInterval(timer);
+    };
+}, []);
+
     return (
         <div className="relative w-full h-screen overflow-hidden">
             {slides.map((slide, index) => (

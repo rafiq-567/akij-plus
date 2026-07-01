@@ -22,7 +22,7 @@ export default function CategoryBanner() {
         {/* Right Image */}
         <div className="hidden md:block">
           <Image
-            src="/images/category-banner.png"
+            src="/shirt/shirt-1.jpg"
             alt="Categories"
             width={420}
             height={260}

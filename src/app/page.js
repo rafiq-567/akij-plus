@@ -3,6 +3,8 @@ import CategoryShowcase from "@/components/home/CategoryShowcase";
 import HeroBanner from "@/components/home/HeroBanner";
 import HomeButton from "@/components/home/HomeButton";
 import NewArrivalCategories from "@/components/home/NewArrivalCategories";
+import PaymentSystem from "@/components/home/PaymentSystem";
+import WorkWithUs from "@/components/home/WorkWithUs";
 
 
 export default function Home() {
@@ -14,7 +16,8 @@ export default function Home() {
       <NewArrivalCategories />
       <CategoriesBanner />
       <CategoryShowcase />
-
+      <WorkWithUs />
+      <PaymentSystem />
     </div>
   );
 }
