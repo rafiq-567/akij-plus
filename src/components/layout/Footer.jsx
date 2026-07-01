@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -29,10 +29,16 @@ export default function Footer() {
                 <div>
                     <h4 className="font-semibold mb-3 text-sm">Head Office</h4>
                     <ul className="space-y-2 text-sm text-gray-400">
-                        <li><Link href="/account/login" className="hover:text-white">Akij Center, 97 Shaheed Tajuddin Ahmed Saroni,
+                        <li className="flex gap-2">
+                            <MapPin size={22} stroke="red"/>
+                            <Link href="/account/login" className="hover:text-white">Akij Center, 97 Shaheed Tajuddin Ahmed Saroni,
                             Tejgaon I/A, Dhaka-1208</Link></li>
-                        <li><Link href="/account/orders" className="hover:text-white">+8801755662545</Link></li>
-                        <li><Link href="/account/orders" className="hover:text-white flex"><Mail /> info@akijdynamics.com</Link></li>
+                        <li className="flex gap-2">
+                            <Phone size={16} stroke="red" fill="red"/>
+                            <Link href="/account/orders" className="hover:text-white">+8801755662545</Link></li>
+                        <li className="flex gap-2">
+                            <Mail size={16} stroke="red"/>
+                            <Link href="/account/orders" className="hover:text-white">info@akijdynamics.com</Link></li>
                         <li><Link href="/account/orders" className="hover:text-white">Trade License No: TRAD/DNCC/010235/2025</Link></li>
                     </ul>
                 </div>

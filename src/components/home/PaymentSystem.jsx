@@ -5,11 +5,6 @@ import Link from "next/link";
 export default function PaymentSystem() {
     return (
         <section>
-            {/* Top */}
-            <div className=" text-center">
-            </div>
-
-            {/* Bottom */}
             <div className="bg-[#f5f8fc] py-10">
                 <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
 
@@ -17,7 +12,7 @@ export default function PaymentSystem() {
 
                     <div className="rounded-3xl bg-white p-10 shadow-xl">
                         <div className="flex items-center gap-4">
-                            <Mail className="text-orange-500" size={24} />
+                            <Mail className="text-orange-500" size={20} />
 
                             <h3 className="text-xl font-bold text-[#183552]">
                                 Get Special Discounts
@@ -32,12 +27,12 @@ export default function PaymentSystem() {
                         <div className="mt-2 space-y-1">
 
                             <div className="flex items-center gap-3">
-                                <Phone className="text-orange-500" size={18} />
+                                <Phone fill="red" stroke="red" size={16} />
                                 <span className="text-xs">+8801755662545</span>
                             </div>
 
                             <div className="flex items-center gap-3">
-                                <Clock className="text-orange-500" size={18} />
+                                <Clock className="text-orange-500" size={16} />
                                 <span className="text-xs">Open 24/7</span>
                             </div>
 

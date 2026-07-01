@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const slides = [
-    { id: 1, image: "/shirt.jpg", alt: "Fall Collection" },
+    { id: 1, image: "/panjabi.jpg", alt: "Fall Collection" },
     { id: 2, image: "/elegant-young-handsome-man.jpg", alt: "New Arrivals" },
     { id: 3, image: "/man-jacket-outside.jpg", alt: "Happy Hour Sale" },
-    { id: 4, image: "/portrait-handsome-smiling-stylish-young-man-model-wearing-jeans-clothes-sunglasses-fashion-man.jpg", alt: "Happy Hour Sale" },
+    { id: 4, image: "/half-sleeve.jpg", alt: "Happy Hour Sale" },
 ];
 
 export default function HeroBanner() {
