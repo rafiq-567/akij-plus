@@ -18,7 +18,7 @@ const categories = [
 
 export default function NewArrivalCategories() {
   return (
-    <section className="max-w-7xl mx-auto py-10">
+    <section className="max-w-7xl mx-auto py-10" id="new-arrivals">
 
 
       <div className="bg-amber-50 shadow-2xl rounded-md border border-orange-100 py-4 mb-8 text-center">

@@ -5,8 +5,8 @@ export default function Topbar() {
     return (
         <div className='flex justify-between items-center px-8 py-2 bg-[#131921]'>
             <button className='flex items-center justify-center gap-2 px-3 py-1 border-black border-2 bg-red-950 font-bold text-white'>
-                <Zap className='w-4 h-4 text-yellow-400 animate-pulse'/>
-                <h1>
+                <Zap className='w-4 h-4  text-yellow-400 animate-pulse'/>
+                <h1 className='text-xs sm:text-sm md:text-lg'>
                     Exclusive FALL Collection
                 </h1>
             </button>
@@ -14,11 +14,11 @@ export default function Topbar() {
             <div className='flex items-center justify-center gap-4'>
                 <button className='flex items-center justify-center gap-1 py-1 px-3 border-black border-2 bg-red-950 text-white rounded-sm'>
                     <Van />
-                    <h1>Corporate Sales</h1>
+                    <h1 className='text-xs sm:text-sm md:text-lg'>Corporate Sales</h1>
                 </button>
-                <button className='flex items-center justify-center gap-1  font-bold text-white px-3 py-1 border-black border-2 bg-red-950 rounded-sm'>
+                <button className='flex items-center justify-center gap-1  font- text-white px-3 py-1 border-black border-2 bg-red-950 rounded-sm'>
                     <Flame className='w-4 h-4 text-orange-500 animate-bounce'/>
-                    <h1>
+                    <h1 className='text-xs sm:text-sm md:text-lg'>
                         Happy Hour
                     </h1>
                 </button>

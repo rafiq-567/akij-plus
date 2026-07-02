@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-12 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div>
                     <h3 className="font-bold text-lg mb-3">Company</h3>
-                    <p className="text-sm text-gray-400">
+                    <p className="text-sm text-gray-400 hover:text-white">
                         About Us
                     </p>
                 </div>

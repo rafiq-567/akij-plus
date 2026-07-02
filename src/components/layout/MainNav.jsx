@@ -3,13 +3,13 @@ import { BaggageClaim, UserRound, Search, Menu } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import CategoryDrawer from './CategoryDrawer'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function MainNav() {
     const [scrolled, setScrolled] = useState(false);
     const [drawerOpen, setDrawerOpen] = useState(false);
     const pathname = usePathname();
-
+    const router = useRouter();
     const isHome = pathname === "/";
 
     useEffect(() => {
@@ -17,6 +17,19 @@ export default function MainNav() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const scrollToSection = (id) => {
+        if (isHome) {
+            // already on home — just force scroll directly
+            document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // navigate home first, then scroll after page loads
+            router.push("/");
+            setTimeout(() => {
+                document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+            }, 500);
+        }
+    };
 
     return (
         <>
@@ -47,8 +60,15 @@ export default function MainNav() {
                 </div>
 
                 <div className='flex gap-4 items-center text-white'>
-                    <Link href="/best-sellers" className='text-xs cursor-pointer'>Best Sellers</Link>
-                    <Link href="/products?sort=new-arrivals" className='text-xs cursor-pointer'>New Arrivals</Link>
+                    <Link href="/best-sellers" className='text-xs cursor-pointer'>
+                        Best Sellers
+                    </Link>
+                    <button
+                        onClick={() => scrollToSection("new-arrivals")}
+                        className='text-xs cursor-pointer text-white'
+                    >
+                        New Arrivals
+                    </button>
                     <UserRound />
                     <BaggageClaim />
                 </div>
