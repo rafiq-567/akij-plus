@@ -47,8 +47,8 @@ export default function MainNav() {
                 </div>
 
                 <div className='flex gap-4 items-center text-white'>
-                    <Link href="/products?sort=best-sellers" className='text-sm cursor-pointer'>Best Sellers</Link>
-                    <Link href="/products?sort=new-arrivals" className='text-sm cursor-pointer'>New Arrivals</Link>
+                    <Link href="/products?sort=best-sellers" className='text-xs  cursor-pointer'>Best Sellers</Link>
+                    <Link href="/products?sort=new-arrivals" className='text-xs cursor-pointer'>New Arrivals</Link>
                     <UserRound />
                     <BaggageClaim />
                 </div>
