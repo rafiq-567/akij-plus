@@ -70,11 +70,7 @@ export default function ProductsPage() {
   return (
     <div className="max-w-7xl mx-auto mt-40 px-4 py-6">
 
-      {/* This should always be visible — if not, toolbar component has an error */}
-      <div className="mb-4 p-2 bg-yellow-100 text-sm">
-        Toolbar test: {displayedProducts.length} products loaded
-      </div>
-
+    
       <ProductToolbar
         totalCount={displayedProducts.length}
         sortValue={sortValue}
