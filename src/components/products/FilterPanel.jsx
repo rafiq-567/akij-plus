@@ -71,7 +71,7 @@ export default function FilterPanel({ isOpen, onClose, activeFilters, onFilterCh
                         }`}
                       >
                         {isActive && (
-                          <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <svg className="w-2.5 h-2.5 text-white " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         )}

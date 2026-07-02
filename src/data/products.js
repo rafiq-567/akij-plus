@@ -58,6 +58,7 @@ export const products = [
     price: 1250,
     originalPrice: 2450,
     save: 1200,
+    bestSeller: true,
   },
   {
     id: 141,
@@ -67,6 +68,7 @@ export const products = [
     price: 1200,
     originalPrice: 1800,
     save: 600,
+    bestSeller: true,
   },
   {
     id: 142,
@@ -76,6 +78,7 @@ export const products = [
     price: 600,
     originalPrice: 950,
     save: 350,
+    bestSeller: true,
   },
   {
     id: 143,
@@ -85,5 +88,6 @@ export const products = [
     price: 650,
     originalPrice: 1000,
     save: 350,
+    bestSeller: true,
   },
 ];
